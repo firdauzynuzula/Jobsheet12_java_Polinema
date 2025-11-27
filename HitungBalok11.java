@@ -29,12 +29,13 @@ public class HitungBalok11 {
         t = input.nextInt();
 
         L = hitungLuas(p, l);
-        System.out.println("Luas persegi panjang adalah " + L);
+        System.out.println("Luas Persegi Panjang adalah " + L);
 
         vol = hitungVolume(t, p, l);
         System.out.println("Volume balok adalah " + vol);
 
         input.close();
+
 
     }
 }
