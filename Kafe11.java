@@ -7,14 +7,14 @@ public class Kafe11 {
         System.out.println("Anda adalah member, dapatkan diskon 10% untuk setiap pembelian!");
       }
 
-      // if (KodePromo.equals("DISKON50")) {
-      //   System.out.println("Diskon 50%");
-      // }
-      // else if (KodePromo.equals("DISKON30")) {
-      //   System.out.println("Diskon 30%");
-      // } else {
-      //   System.out.println("kode invalid");
-      // }
+      if (KodePromo.equals("DISKON50")) {
+        System.out.println("Diskon 50%");
+      }
+      else if (KodePromo.equals("DISKON30")) {
+        System.out.println("Diskon 30%");
+      } else {
+        System.out.println("kode invalid");
+      }
 
 
         System.out.println("===== MENU RESTO KAFE ====");
