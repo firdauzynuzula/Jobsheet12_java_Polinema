@@ -8,8 +8,6 @@ perintah penampilan menu langsung di dalam fungsi main.
 4. Uraikan secara singkat alur eksekusi program ketika fungsi Menu() dipanggil dari main
 (mulai dari program dijalankan sampai daftar menu tampil di layar)
 
-
-
 jawab: 
 1. Tidak
 2. Bisa 
