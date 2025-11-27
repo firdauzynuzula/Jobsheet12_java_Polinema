@@ -21,4 +21,14 @@ Jelaskan alasan Anda.
 
 
 jawab:
-1. 
+1. Parameter: sebagai tempat untuk data masukan yang akan diolah
+dalam fungsi. Banyaknya parameter menyesuaikan kebutuhan. Setiap
+parameter terdiri dari tipe data dan nama parameter (misal: int a,
+float b), sama persis seperti deklarasi variabel.
+2. Karena data yang diterima berupa nama dan boolean berupa true atau false
+3. Tidak sama. Semua parameter adalah variabel (karena mereka menyimpan nilai), 
+   tetapi tidak semua variabel adalah parameter. Parameter adalah jenis variabel khusus dengan peran yang sangat spesifik sebagai input untuk fungsi. 
+4. cara kerja parameter isMember adalah ketika inputan atau data bernilai true maka program akan mencetak output berupa "Anda adalah member, dapatkan diskon 10% untuk setiap pembelian!" , 
+   sedangkan jika bernilai false maka program tidak mencetak output berupa "Anda adalah member, dapatkan diskon 10% untuk setiap pembelian!" 
+5. Yang terjadi adalah error karena argument berupa string dan boolean tidak terpenuhi.
+6. Sudah
