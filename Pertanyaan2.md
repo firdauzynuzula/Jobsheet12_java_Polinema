@@ -32,3 +32,5 @@ float b), sama persis seperti deklarasi variabel.
    sedangkan jika bernilai false maka program tidak mencetak output berupa "Anda adalah member, dapatkan diskon 10% untuk setiap pembelian!" 
 5. Yang terjadi adalah error karena argument berupa string dan boolean tidak terpenuhi.
 6. Sudah
+7. Menu("Andi", true, "DISKON30");
+8. Ya , membuat kode program mudah dibaca karena dengan parameter tersebut membuat fungsi menjadi lebih ringkas dan lebih bersih dibandingkan dengan menuliskan tersebut didalam fungsi
