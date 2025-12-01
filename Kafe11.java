@@ -52,5 +52,6 @@ public class Kafe11 {
       System.out.println("Total harga untuk pesanan Anda: Rp " + totalHarga);
 
         Menu("Andi", true, "DISKON30");
+        sc.close();
     }
 }
