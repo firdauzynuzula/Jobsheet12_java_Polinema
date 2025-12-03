@@ -9,6 +9,7 @@ public class NilaiMahasiswa11 {
             nilaiMahasiswa[i-1] = input.nextInt();
         }
         input.close();
+        System.out.flush();
         return nilaiMahasiswa;
     }
     
@@ -21,8 +22,9 @@ public class NilaiMahasiswa11 {
 
     }
 
-    public static void tampilArray( int ...nilaiMahasiswa) {
-        System.out.println("Nilai Mahasiswa:");
+    public static void tampilArray(int... nilaiMahasiswa) {
+        System.out.println("\n");
+        System.out.println("Nilai Mahasiswa: ");
         for (int i = 0; i < nilaiMahasiswa.length; i++) {
             System.out.println("Mahasiswa ke-" + (i+1) + ": " + nilaiMahasiswa[i]);
         }
@@ -30,10 +32,16 @@ public class NilaiMahasiswa11 {
     }
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Masukkan jumlah mahasiswa:");
+        System.out.print("Masukkan jumlah mahasiswa: ");
         int jmlMhs = input.nextInt();
+
+        // array untuk menyimpan nilai mahasiswa
         int nilaiMhs[] = isianArray(jmlMhs);
+
+        // menampilkan nilai mahasiswa
         tampilArray(nilaiMhs);
+
+        // menghitung total nilai mahasiswa
         double totalNilai = hitungTotal(nilaiMhs);
         System.out.println("Total nilai mahasiswa: " + totalNilai);
         input.close();
