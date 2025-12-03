@@ -50,16 +50,16 @@ public class RekapPenjualanCafe11 {
     // Fungsi untuk menampilkan data penjualan
     public static void tampilkanDataPenjualan(int jumlahHari) {
         System.out.println("\n====Data Penjualan Selama " + jumlahHari + " Hari====");
-        System.out.print("Menu\t\t\t");
+        System.out.print("Menu\t\t");
         for (int i = 1; i <= jumlahHari; i++) {
-            System.out.print("H" + i + "\t");
+            System.out.print("H" + i + " | " + "\t");
         }
         System.out.println();
 
         for (int i = 0; i < menu.length; i++) {
-            System.out.print(menu[i] + (menu[i].length() < jumlahHari ? "\t\t\t" : "\t\t"));
+            System.out.print(menu[i] + (menu[i].length() < 8 ? "\t\t" : "\t"));
             for (int j = 0; j < jumlahHari; j++) {
-                System.out.print(penjualan[i][j] + "\t");
+                System.out.print(penjualan[i][j] +" | " + "\t");
             }
             System.out.println();
         }
