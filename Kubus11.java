@@ -1,7 +1,13 @@
+import java.util.Scanner;
 public class Kubus11 {
+    
     public static void main(String[] args) {
-        int sisi;
-        sisi = 7;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Masukkan panjang sisi kubus: ");
+        int sisi = input.nextInt();
+        System.out.flush();
         int volume = sisi * sisi * sisi;
 
 
@@ -9,5 +15,7 @@ public class Kubus11 {
 
         int luasPermukaan = 6 * sisi * sisi;
         System.out.println("Luas permukaan kubus dengan sisi " + sisi + " adalah " + luasPermukaan);
+
+        input.close();
     }
 }
