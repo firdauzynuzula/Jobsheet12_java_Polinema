@@ -7,7 +7,9 @@ public class RekapPenjualanCafe11 {
     public static int[][] penjualan = {};
     public static Scanner sc = new Scanner(System.in);
 
-    public static void inputanDinamisArray(int jumlahHari) {
+
+    // Fungsi untuk inputan dinamis menu
+    public static void inputanDinamisMenu(int jumlahHari) {
         System.out.print("Masukkan jumlah menu: ");
         int jumlahMenu = sc.nextInt();
         sc.nextLine(); // Membersihkan buffer
@@ -21,6 +23,7 @@ public class RekapPenjualanCafe11 {
         }
     }
 
+    // Fungsi untuk inputan dinamis hari
     public static int inputanDinamisHari() {
         System.out.print("Masukkan jumlah hari penjualan: ");
         int jumlahHari = sc.nextInt();
@@ -31,6 +34,7 @@ public class RekapPenjualanCafe11 {
         return jumlahHari;
     }
 
+    // Fungsi untuk inputan Data Penjualan dengan array dinamis
     public static void inputDataPenjualan(int jumlahHari) {
         System.out.println("====Input Data Penjualan Selama " + jumlahHari + " Hari====");
         for (int i = 0; i < menu.length; i++) {
@@ -43,6 +47,7 @@ public class RekapPenjualanCafe11 {
         }
     }
 
+    // Fungsi untuk menampilkan data penjualan
     public static void tampilkanDataPenjualan(int jumlahHari) {
         System.out.println("\n====Data Penjualan Selama " + jumlahHari + " Hari====");
         System.out.print("Menu\t\t");
@@ -52,7 +57,7 @@ public class RekapPenjualanCafe11 {
         System.out.println();
 
         for (int i = 0; i < menu.length; i++) {
-                System.out.print(menu[i] + (menu[i].length() < jumlahHari? "\t" : "\t\t"));
+            System.out.print(menu[i] + (menu[i].length() < jumlahHari ? "\t" : "\t\t"));
             for (int j = 0; j < jumlahHari; j++) {
                 System.out.print(penjualan[i][j] + "\t");
             }
@@ -60,6 +65,8 @@ public class RekapPenjualanCafe11 {
         }
     }
 
+    
+    // Fungsi untuk menampilkan menu dengan penjualan tertinggi
     public static void menuPenjualanTertinggi(int jumlahHari) {
         int maxPenjualan = 0;
         int indexMenuTertinggi = 0;
@@ -79,6 +86,8 @@ public class RekapPenjualanCafe11 {
         System.out.println("Total penjualan: " + maxPenjualan);
     }
 
+
+    // Fungsi untuk menghitung rata-rata penjualan per menu
     public static void rataRataPenjualan(int jumlahHari) {
         System.out.println("\nRata-rata Penjualan per Menu:");
         for (int i = 0; i < menu.length; i++) {
@@ -108,8 +117,8 @@ public class RekapPenjualanCafe11 {
         // deklarasi variabel untuk fungsi dinamis
         int jumlahHari = inputanDinamisHari();
 
-        // pemanggilan fungsi inputan dinamis array
-        inputanDinamisArray(jumlahHari);
+        // pemanggilan fungsi inputan dinamis menu
+        inputanDinamisMenu(jumlahHari);
 
         // pemanggilan fungsi input data penjualan
         inputDataPenjualan(jumlahHari);
