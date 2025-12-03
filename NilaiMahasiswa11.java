@@ -2,13 +2,14 @@ import java.util.Scanner;
 public class NilaiMahasiswa11 {
 
     public static int[] isianArray(int jumlahMahasiswa) {
-        int nilai[] = new int[jumlahMahasiswa];
+        int nilaiMahasiswa[] = new int[jumlahMahasiswa];
         Scanner input = new Scanner(System.in);
-        for (int i = 0; i < jumlahMahasiswa; i++) {
-            System.out.print("Nilai mahasiswa ke-" + (i+1) + ": ");
-            nilai[i] = input.nextInt();
+        for (int i = 1; i <= jumlahMahasiswa; i++) {
+            System.out.print("Nilai mahasiswa ke-" + i + ": ");
+            nilaiMahasiswa[i-1] = input.nextInt();
         }
-        return nilai;
+        input.close();
+        return nilaiMahasiswa;
     }
     
     public static double hitungTotal(int ...nilaiMahasiswa) {
@@ -31,9 +32,7 @@ public class NilaiMahasiswa11 {
         Scanner input = new Scanner(System.in);
         System.out.print("Masukkan jumlah mahasiswa:");
         int jmlMhs = input.nextInt();
-
         int nilaiMhs[] = isianArray(jmlMhs);
-    
         tampilArray(nilaiMhs);
         double totalNilai = hitungTotal(nilaiMhs);
         System.out.println("Total nilai mahasiswa: " + totalNilai);
